@@ -1,0 +1,9 @@
+logs/
+*.log
+node_modules/
+.idea/
+dist/
+.coveralls.yml
+.kohi/
+coverage/
+vendor/

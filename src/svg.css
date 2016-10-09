@@ -1,0 +1,77 @@
+@media screen {
+    #svg {
+        width: 702px;
+        height: 702px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border: solid 1px #CCCCCC;
+        float: left;
+        margin-right: 10px;
+        font: 1em source-sans-pro, Source Sans Pro, Helvetica, sans-serif;
+    }
+
+    #form {
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        height: 700px;
+        overflow: auto;
+        margin-top: -20px;;
+    }
+
+    #svgCode {
+        width: 100%;
+        height: 300px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border: solid 1px #CCCCCC;
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+        font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+        color: #606060;
+    }
+
+    #output {
+        margin-top: 10px;
+    }
+
+    span.label {
+        width: 100px;
+        text-align: right;
+        color: black;
+        font-size: 1em;
+    }
+}
+
+@media print {
+    header nav, footer {
+        display: none;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    html { margin: 0; }
+
+    .container, #svgContainer {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #svg {
+        width: 7in;
+        height: 7in;
+        margin: 1in 0 0;
+        border: none;
+    }
+
+    h1, #form, #svgCode {
+        visibility: hidden;
+        display: none;
+    }
+}
